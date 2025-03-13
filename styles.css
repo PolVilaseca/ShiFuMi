@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+/* Container for simulation canvas and graphs side by side */
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Simulation canvas styles */
+canvas {
+  border: 1px solid #333;
+  background-color: #fff;
+}
+
+/* Graph container and Plotly graph styles */
+#graph-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#graph, #stackedGraph {
+  width: 600px;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+
+#graph {
+  height: 300px; /* first graph height */
+}
+
+#stackedGraph {
+  height: 300px; /* second graph height */
+}
+
+/* Control panel styling */
+#control-panel {
+  width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #e0e0e0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Style for buttons and inputs */
+button, input[type="number"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  font-size: 16px;
+  margin: 0 5px;
+}
